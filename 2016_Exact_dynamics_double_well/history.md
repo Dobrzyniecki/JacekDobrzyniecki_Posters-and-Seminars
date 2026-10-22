@@ -1,5 +1,5 @@
 Exact dynamics of two ultra-cold bosons in a one-dimensional double-well potential
-Refers to paper: Eur. Phys. J. D. (2016) 70:83 https://doi.org/10.1140/epjd/e2016-70016-x
+Refers to paper: Eur. Phys. J. D. (2016) 70:83 https://doi.org/10.1140/epjd/e2016-70016-x ; subsequent correction: https://link.springer.com/article/10.1140/epjd/s10053-023-00785-4
 
 Presented at:
 
