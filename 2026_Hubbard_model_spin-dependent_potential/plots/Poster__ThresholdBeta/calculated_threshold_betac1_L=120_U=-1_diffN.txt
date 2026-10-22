@@ -1,0 +1,39 @@
+#Calculated manually from _rescaled_doublon_numbers_N=*_L=*_U=*.dat
+# beta_c_1: smallest beta such that N'_D(\beta) < N/2 - 0.5
+# N'_D = rescaled doublon number
+# intended accuracy: down to 1e-4
+# The only DMRG initial states used during calculations were ones explicitly targeting manifolds with N_D=N/2 or N/2-1 doublons; therefore, the calculations should be sufficient for pinpointing the initial N/2 -> N/2-1 transition, but inaccurate once you get to ground states with <N/2-1 doublons.#
+# datablock 0
+# L = 120, U = -1
+#{1}N=N_up+N_down {2}beta_c_1 {3}N_up {4}N_down
+2   0.0015  1   1
+4   0.0016  2   2
+6   0.0016  3   3
+8   0.0015  4   4
+10  0.0015  5   5
+12  0.0015  6   6
+14  0.0015  7   7
+16  0.0015  8   8
+18  0.0015  9   9
+20  0.0015  10  10
+24  0.0014  12  12
+30  0.0014  15  15
+36  0.0014  18  18
+38  0.0014  19  19
+40  0.0015  20  20
+42  0.0016  21  21
+44  0.0019  22  22
+46  0.0021  23  23
+48  0.0023  24  24
+50  0.0024  25  25
+52  0.0025  26  26
+54  0.0026  27  27
+56  0.0027  28  28
+60  0.0029  30  30
+72  0.0038  36  36
+80  0.0045  40  40
+90  0.0051  45  45
+100 0.0056  50  50
+110 0.0061  55  55
+118 0.0065  59  59
+120 0.0065  60  60

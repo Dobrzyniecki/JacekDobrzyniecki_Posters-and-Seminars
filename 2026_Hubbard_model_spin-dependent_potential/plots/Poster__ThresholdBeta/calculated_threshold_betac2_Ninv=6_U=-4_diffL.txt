@@ -1,0 +1,22 @@
+#Calculated manually from _rescaled_doublon_numbers_N=*_L=*_U=*.dat
+# beta_c_2: smallest beta such that N'_D(\beta) < 0.5
+# N'_D = rescaled doublon number
+# intended accuracy: down to 1e-4
+# The only DMRG initial states used during calculations were ones explicitly targeting manifolds with N_D=1 or 0 doublons; therefore, the calculations should be sufficient for pinpointing the final 1 -> 0 transition, but inaccurate once you get to ground states with >1 doublons.
+#
+# datablock 0
+# N = L/12 + L/12, U = -4
+#{1}L {2}beta_c_2
+12  0.2770 #pathological case: at this L and filling, the population is 1+1, so there's no distinction between first and final pair breaking
+24  0.1606
+36  0.1128
+48  0.0868
+60  0.0706
+72  0.0594
+84  0.0513
+96  0.0452
+108 0.0403
+120 0.0364
+132 0.0332
+144 0.0305
+156 0.0282
