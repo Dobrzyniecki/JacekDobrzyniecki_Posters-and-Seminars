@@ -1,0 +1,165 @@
+%\documentclass[doublecol,linenumbers]{epl2}
+\documentclass[aps,floatfix,showpacs,pra]{revtex4}
+\usepackage{amsmath}
+\usepackage{graphicx}
+ 
+\begin{document}
+
+\title{pair tunneling}
+\author{Jacek Dobrzyniecki}
+\affiliation{                    
+   Institute of Physics, Polish Academy of Sciences, Aleja Lotnikow 32/46, PL-02668 Warsaw, Poland
+  }
+\pacs{67.85.Hj}{Unknown}
+
+\begin{abstract}
+%The dynamics of two and three bosons tunneling through a barrier from a potential well to open space are studied. We find that for strong repulsive interparticle interactions, the dynamics promote sequential tunneling of both bosons out of the trap, while for strong attractive interactions bosons tunnel simultaneously as a bound pair. Intermediate regimes are present for intermediate values of interactions. We also analyze three-particle tunneling, and find that the dynamics prefer pair tunneling for weak attractive interactions and triplet tunneling for strong attractive interactions. - We study the tunneling of two bosons out of an open well into open space. - We show that as interaction strength changes from positive to negative, the tunneling changes from mostly consisting of sequential single-particle tunneling, through a mixed regime, towards a regime constisting solely of weak pair tunneling, with the crossover occuring for finite attractive interactions. - The location of the critical interaction value is seen to depend mainly on the height of the barrier, rather than its thickness. - We also present some results for three-particle system, showing that the tunneling changes from mostly single-particle tunneling in the repulsive regime, through pair tunneling for weak attractive interactions, to triplet tunneling for strongly attractive interactions.  
+\end{abstract}
+
+\maketitle
+\section{Introduction}
+
+%Powiększenie w Okular: 411,3%
+
+\begin{equation}
+ \hat{H} = -t \sum\limits_{\langle i,j \rangle, \sigma} (\hat{c}^\dagger_{i \sigma} \hat{c}_{j \sigma} + \hat{c}^\dagger_{j \sigma} \hat{c}_{i \sigma}) + U \sum\limits_i \hat{n}_{i \uparrow} \hat{n}_{i \downarrow}
+\end{equation}
+
+\begin{equation}
+ \hat{H} = -t \sum\limits_{\langle i,j \rangle} \hat{a}^\dagger_i \hat{a}_j + \frac{U}{2} \sum\limits_i \hat{n}_i (\hat{n}_i - 1)
+\end{equation}
+
+\begin{equation}
+ H = \sum\limits_{i=1}^N \left[ - \frac{1}{2} \frac{\partial^2}{\partial x_i^2} + V(x_i) \right] + \sum\limits_{i < j}^N g \delta(x_i-x_j)
+\end{equation}
+
+\begin{equation}
+ H = \sum\limits_{i=1}^N \left[ - \frac{1}{2} \frac{\partial^2}{\partial x_i^2} + V(x_i) + g \sum\limits_{j=i+1}^N \delta(x_i-x_j) \right]
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}} &= \sum\limits_{\sigma}^{\{L,R\}} \sum\limits_i E_i \hat{a}_{\sigma i}^\dagger \hat{a}_{\sigma i} - \sum\limits_i J_i (\hat{a}_{Li}^\dagger \hat{a}_{Ri} + \hat{a}_{Ri}^\dagger \hat{a}_{Li}) \\
+ &+ \frac{1}{2} \sum\limits_{\alpha \beta \gamma \delta} U_{\alpha \beta \gamma \delta} \hat{a}_\alpha^\dagger \hat{a}_\beta^\dagger \hat{a}_\gamma \hat{a}_\delta
+ \end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}} &= \sum\limits_{\sigma}^{\{L,R\}} \sum\limits_i E_i \hat{a}_{\sigma i}^\dagger \hat{a}_{\sigma i} - \sum\limits_i J_i (\hat{a}_{Li}^\dagger \hat{a}_{Ri} + \hat{a}_{Ri}^\dagger \hat{a}_{Li}) \\
+ &+ \frac{1}{2} \sum\limits_{IJKL} U_{IJKL} \hat{a}_I^\dagger \hat{a}_J^\dagger \hat{a}_K \hat{a}_L
+ \end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}} &= \sum\limits_{\sigma}^{\{L,R\}} \sum\limits_i E_i \hat{a}_{\sigma i}^\dagger \hat{a}_{\sigma i} - \sum\limits_i J_i (\hat{a}_{Li}^\dagger \hat{a}_{Ri} + \hat{a}_{Ri}^\dagger \hat{a}_{Li}) \\
+ &+ \frac{1}{2} \sum\limits_{KLMN} U_{KLMN} \hat{a}_K^\dagger \hat{a}_L^\dagger \hat{a}_M \hat{a}_N
+ \end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}}_\mathtt{2Mode} &= - J (\hat{a}_{L0}^\dagger \hat{a}_{R0} + \hat{a}_{R0}^\dagger \hat{a}_{L0}) + \frac{U}{2} (\hat{a}_{L0}^{\dagger 2} \hat{a}_{L0}^2 + \hat{a}_{R0}^{\dagger 2} \hat{a}_{R0}^2) + V \hat{a}_{L0}^\dagger \hat{a}_{L0} \hat{a}_{R0}^\dagger \hat{a}_{R0} \\
+ &+ \sum\limits_{\sigma}^{\{L,R\}} T (\hat{a}_{L0}^\dagger \hat{a}_{\sigma 0}^\dagger \hat{a}_{\sigma 0} \hat{a}_{R0} + \hat{a}_{R0}^\dagger \hat{a}_{\sigma 0}^\dagger \hat{a}_{\sigma 0} \hat{a}_{L0}) + \frac{V}{4} (\hat{a}_{L0}^{\dagger 2} \hat{a}_{R0}^2 + \hat{a}_{R0}^{\dagger 2} \hat{a}_{L0}^2)
+ \end{split}
+\end{equation}
+
+\begin{equation}
+ \rho^{(\mathtt{k})}(x,x') = \frac{1}{N} \langle \mathtt{k} | \hat{\Psi}^\dagger(x) \hat{\Psi}(x') | \mathtt{k} \rangle
+\end{equation}
+
+\begin{equation}
+ \rho^{(\mathtt{k})}(x,x') = \sum\limits_i \lambda_i \psi_i^*(x) \psi_i(x')
+\end{equation}
+
+\begin{equation}
+ \rho^{(\mathtt{|k\rangle})}(x,x') = \frac{1}{N} \langle \mathtt{k} | \hat{\Psi}^\dagger(x) \hat{\Psi}(x') | \mathtt{k} \rangle
+\end{equation}
+
+\begin{equation}
+ \rho^{(\mathtt{|k\rangle})}(x,x') = \sum\limits_i \lambda_i \psi_i^*(x) \psi_i(x')
+\end{equation}
+
+\begin{equation}
+ \rho^{(\mathtt{N})}(x,x') \approx \psi_0^*(x) \psi_0(x')
+\end{equation}
+
+\begin{equation}
+ \rho^{(\mathtt{|N\rangle})}(x,x') \approx \psi_0^*(x) \psi_0(x')
+\end{equation}
+
+\begin{equation}
+ \phi_A(x) = \psi_0(x)
+\end{equation}
+
+\begin{equation}
+ \phi_A(x) = \psi_0(x) = \sum\limits_i [\lambda_{Li} \varphi_{Li}(x) + \lambda_{Ri} \varphi_{Ri}(x)]
+\end{equation}
+
+\begin{equation}
+ \phi_A(x) = \sum\limits_i [c_{Li} \varphi_{Li}(x) + c_{Ri} \varphi_{Ri}(x)]
+\end{equation}
+
+\begin{equation}
+ \phi_A(x) = \sum\limits_i [\lambda_{Li} \varphi_{Li}(x) + \lambda_{Ri} \varphi_{Ri}(x)]
+\end{equation}
+
+
+\begin{equation}
+ \phi_B(x) = \sum\limits_i (-1)^i [ \langle Ri | \phi_A\rangle \varphi_{Li}(x) - \langle Li | \phi_A\rangle \varphi_{Ri}(x) ]
+\end{equation}
+
+\begin{equation}
+ \phi_B(x) = \sum\limits_i (-1)^i [c_{Ri} \varphi_{Li}(x) - c_{Li} \varphi_{Ri}(x)]
+\end{equation}
+
+\begin{equation}
+ \phi_B(x) = \sum\limits_i (-1)^i [\lambda_{Ri} \varphi_{Li}(x) - \lambda_{Li} \varphi_{Ri}(x)]
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}}_\mathtt{Eff} = \hat{\mathcal{H}}_\mathtt{2Mode} &+ \frac{W}{6} \sum\limits_\sigma^{\{L,R\}} [\hat{n}_{\sigma 0}(\hat{n}_{\sigma 0} - 1)(\hat{n}_{\sigma 0} - 2)] \\
+ &+ \frac{Q}{2} [(\hat{a}_{L0}^{\dagger 3} \hat{a}_{L0}^2 \hat{a}_{R0} + \hat{a}_{R0}^{\dagger 3} \hat{a}_{R0}^2 \hat{a}_{L0}) + h.c.]
+ \end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}}_\mathtt{Eff} = \hat{\mathcal{H}}_\mathtt{2Mode} &+ \frac{W}{6} [\hat{n}_{L0}(\hat{n}_{L0} - 1)(\hat{n}_{L0} - 2) + \hat{n}_{R0}(\hat{n}_{R0} - 1)(\hat{n}_{R0} - 2)] \\
+ &+ \frac{Q}{2} [(\hat{a}_{L0}^{\dagger 3} \hat{a}_{L0}^2 \hat{a}_{R0} + \hat{a}_{R0}^{\dagger 3} \hat{a}_{R0}^2 \hat{a}_{L0}) + h.c.]
+ \end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}}_\mathtt{Eff} = \hat{\mathcal{H}}_\mathtt{2Mode} &+ \frac{W}{6} [\hat{n}_{L0}(\hat{n}_{L0} - 1)(\hat{n}_{L0} - 2) + \hat{n}_{R0}(\hat{n}_{R0} - 1)(\hat{n}_{R0} - 2)] \\
+ &+ \frac{Q}{2} [(\hat{a}_{L0}^\dagger \hat{a}_{L0}^\dagger \hat{a}_{L0}^\dagger \hat{a}_{L0} \hat{a}_{L0} \hat{a}_{R0} + \hat{a}_{R0}^\dagger \hat{a}_{R0}^\dagger \hat{a}_{R0}^\dagger \hat{a}_{R0} \hat{a}_{R0} \hat{a}_{L0}) + h.c.]
+ \end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}}_\mathtt{Eff} = \hat{\mathcal{H}}_\mathtt{2Mode} &+ \frac{W}{6} \sum\limits_\sigma^{\{L,R\}} [\hat{n}_\sigma(\hat{n}_\sigma - 1)(\hat{n}_\sigma - 2)] \\
+ &+ \frac{Q}{2} [(\hat{a}_L^{\dagger 3} \hat{a}_L^2 \hat{a}_R + \hat{a}_R^{\dagger 3} \hat{a}_R^2 \hat{a}_L) + h.c.]
+ \end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}}_\mathtt{Eff} = \hat{\mathcal{H}}_\mathtt{2Mode} &+ \frac{W}{6} [\hat{n}_L(\hat{n}_L - 1)(\hat{n}_L - 2) + \hat{n}_R(\hat{n}_R - 1)(\hat{n}_R - 2)] \\
+ &+ \frac{Q}{2} [(\hat{a}_L^{\dagger 3} \hat{a}_L^2 \hat{a}_R + \hat{a}_R^{\dagger 3} \hat{a}_R^2 \hat{a}_L) + h.c.]
+ \end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+ \hat{\mathcal{H}}_\mathtt{Eff} = \hat{\mathcal{H}}_\mathtt{2Mode} &+ \frac{W}{6} [\hat{n}_L(\hat{n}_L - 1)(\hat{n}_L - 2) + \hat{n}_R(\hat{n}_R - 1)(\hat{n}_R - 2)] \\
+ &+ \frac{Q}{2} [(\hat{a}_L^\dagger \hat{a}_L^\dagger \hat{a}_L^\dagger \hat{a}_L \hat{a}_L \hat{a}_R + \hat{a}_R^\dagger \hat{a}_R^\dagger \hat{a}_R^\dagger \hat{a}_R \hat{a}_R \hat{a}_L) + h.c.]
+ \end{split}
+\end{equation}
+
+
+
+\end{document}
